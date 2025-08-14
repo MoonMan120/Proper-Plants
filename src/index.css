@@ -11,27 +11,31 @@ main {
   border-radius: 10px;
 }
 
-figure {
-  height: 75px;
+.figures {
+  font-size: 70px;
+  text-align: center;
 }
+
 .plant-menu {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20ch, 1fr));
   gap: 1ch;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .cart-items {
   position: absolute;
+  display: grid;
   right: 0;
   top: 0;
   width: 30ch;
   padding: 2ch;
+  margin: -15px;
   /* display: grid;
 grid-column: 3 / 4; */
 }
 
 .inCart1 {
-  display: grid;
+  display: flex;
   gap: 1 rem;
 }
