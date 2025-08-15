@@ -1,6 +1,9 @@
 import CartItem from "./CartItem";
+import { useCart } from "./CartContext";
 
-export default function CartItems({ cart, addMoreToCart, removeFromCart }) {
+export default function CartItems() {
+  const { cart, addMoreToCart, removeFromCart } = useCart();
+
   return (
     <div className="cart-items">
       <h2>Cart</h2>
